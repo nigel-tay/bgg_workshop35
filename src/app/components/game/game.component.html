@@ -1,0 +1,8 @@
+<mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let game of games">{{game.name}}</mat-list-item>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+        <button *ngIf="pageNo > 1" mat-raised-button color="primary" (click)="previousPage()">Previous</button>
+        <br>
+        <button mat-raised-button color="primary" (click)="nextPage()">Next</button>
+    </div>
+</mat-list>
